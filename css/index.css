@@ -25,9 +25,86 @@ header {
 	padding: 10px;
 }
 
+header ul {
+	float: inherit;
+}
+
+header ul li{
+	font-family: 'Smooch Sans', sans-serif;
+	list-style: none;
+	margin-left: 75px;
+	padding: 12px 0;
+	float: left;
+	position: relative;
+}
+
+header ul li a{
+	text-decoration: none;
+	color:rgba(114, 103, 92, 1) ;
+	font-weight: bold;
+	font-size: 20px;
+	justify-content: space-around;
+}
+
+header ul li a::before{
+	display: block;
+	content: " ";
+	width: 0%;
+	background:rgba(216, 206, 197, 1) ;
+	height: 5px;
+	top: 0;
+	position: absolute;
+	transition: width 0.2s;
+}
+header ul li a:hover::before{
+	width: 100%;
+}
+
+.Botones{
+	min-width: 700px;
+	display: flex;
+	justify-content: right;
+}
+
+.Botones a{
+	text-decoration: none;
+	font-size: 28px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color:rgba(216, 206, 197, 1) ;
+	
+}
+
+.Botones a:hover{
+	transform: scale(1.2);
+	color: black;
+}
 
 
 
+.Botones2 {
+	min-width: 700px;
+	display: flex;
+	justify-content: right;
+}
+
+.Botones2 a{
+	text-decoration: none;
+	font-size: 10px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color:rgba(216, 206, 197, 1) ;
+	
+}
+
+.Botones2 a:hover{
+	transform: scale(1.2);
+	color: black;
+}
 
 
 h2{
@@ -48,6 +125,38 @@ section ul li {
 	font-family: 'Smooch Sans', sans-serif;
 }
 
+#columna1{
+	margin: 10px;
+	float: left;
+	width: 48%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#columna1 img{
+	border-radius: 10px;
+}
+
+#columna1 img:hover{
+	transform: scale(1.2);
+}
+
+#columna2{
+	margin: 10px;
+	float: right;
+	width: 48%;
+	text-align: center;
+	border-radius: 10px;
+
+}
+
+#columna2 img{
+	border-radius: 10px;
+}
+
+#columna2 img:hover{
+	transform: scale(1.2);
+}
 
 
 
@@ -165,6 +274,55 @@ h5{
 	
 }	
 
+.field{
+	border: solid 1px #ccc;
+	padding: 10px;
+	width: 200px;
+}
+
+.field:focus{
+	border-color: white;
+}
+
+.center-content{
+	text-align: center;
+}
+
+.btn{
+	font-family: 'Smooch Sans', sans-serif;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-verde{
+	color: white;
+	background-color: #3CC93F;
+}
+
+.btn-verde:hover{
+	background-color: #37B839;
+}
+
+.btn-verde:active{
+	background-color: #29962A;
+}
+
+.btn-rojo{
+	color: white;
+	background-color: red;
+}
+
+.btn-rojo:hover{
+	background-color: indianred;
+}
+
+.btn-rojo:active{
+	background-color: darkred;
+}
 
 
 .identificacion section{
