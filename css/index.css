@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+header {
+	background: white;
+	width: 100%;
+	clear: both;
+	content: " ";o
+    display: table;
+}
+
+.Logo {
+	width: 100px;
+	float: left;
+	padding: 10px;
+}
+
+
+
+
+
+
+h2{
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+	text-align: center;
+}
+
+h3{
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+	text-align: center;
+}
+
+section ul li {
+	font-family: 'Smooch Sans', sans-serif;
+}
+
+
+
+
+footer ul {
+	float: inherit;
+}
+
+footer ul li{
+	font-family: 'Smooch Sans', sans-serif;
+	list-style: none;
+	margin-left: 75px;
+	padding: 12px 0;
+	float: left;
+	position: relative;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color:rgba(114, 103, 92, 1) ;
+	font-weight: bold;
+	font-size: 20px;
+	justify-content: space-around;
+}
+
+footer ul li a::before{
+	display: block;
+	content: " ";
+	width: 0%;
+	background:rgba(216, 206, 197, 1) ;
+	height: 5px;
+	top: 0;
+	position: absolute;
+	transition: width 0.2s;
+}
+footer ul li a:hover::before{
+	width: 100%;
+}
+
+.imagenTexto{
+	width: 100%;
+	height: 25%;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.imagenTexto img{
+	width: 100%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	
+}
+
+h1{
+
+	color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+	
+}
+
+.scroll ul li{
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 2rem;
+}
+
+.parteSuperior li{
+	justify-content:safe center;
+	position: relative;
+
+
+}
+.imagenTextochico img{
+	width: 100%;
+	height: 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	
+}
+
+.imagenTextochico {
+	width: 100%;
+	height: 25%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+
+h4{
+	color:  rgba(114, 28, 44, 1);
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 8rem;
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	right: 25%;
+}
+
+h5{
+	color:  rgba(114, 28, 44, 1);
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 8rem;
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	right: 25%;
+	
+}	
+
+
+
+.identificacion section{
+	position: relative ;
+}
+
+.identificacion section img{
+	width: 100px;
+	float: left;
+	padding: 10px;
+}
+
+.identificacion section p{
+	justify-content: center;
+}
+
+.identificacion p{
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+	text-align: center;
+}
+
+
+article h2{
+
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 2rem;
+	text-align: center;
+}
+
+
+
+.asideIzquierda{
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.asideIzquierda section{
+	margin: 10px;
+	width: 48%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.asideIzquierda section p{
+	
+	text-align: center;
+	
+}
+
+.asideIzquierda div{
+	margin: 10px;
+	width: 48%;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+
+form{
+	width: 300px;
+	margin: 0 auto;
+	background-color: rgba(216, 206, 197, 1);
+	padding: 20px;
+	color: rgba(114, 28, 44, 1);
+	border-radius: 3px;
+	font-size: 21px;
+	font-family: 'Smooch Sans', sans-serif;
+}
+
+input, textarea{
+	outline: none;
+	border: 0;
+	width: 150px;
+}
+
+
+
+.nosotrosTexto{
+
+	color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	
+}
+
+
+.legalTexto {
+	
+	color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	
+}
+
+
+.contableTexto {
+	
+	color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	
+}
+
+
+.contactoTexto{
+	
+	color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
+	font-size: 10rem;
+	position: absolute;
+	top: 30%;
+	left: 37.5%;
+	
+}
+
+.flexMain {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background color: white;
+	padding: 50px;
+	border: 2px;
+}
+
+.flexMain div{
+	
+	width: 20%;
+	margin: 5px;
+	text-align: center;
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 2rem;
+}
+
+.textoSecundario {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background color: white;
+}
+
+.textoSecundario h2{
+	width: 50%;
+	margin: 5px;
+	text-align: center;
+	line-height: 100px;
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+
+}
+
+.flexNosotros{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background color: white;
+	padding: 50px;
+	border: 2px;
+
+}
+
+.flexNosotros section{
+
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	line-height: 100px;
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 2rem;
+}
+
+
+
+@media (min-width:576px) and (max-width:768px) {
+	    
+.flexNosotros{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.flexMain{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textoSecundario{
+		flex-direction: column;
+		align-items: center;
+	}
+	#columna1{
+		margin: 10px;
+		float: unset;
+		width: fit-content;
+		text-align: center;
+		border-radius: 10px;
+		
+	}
+	#columna2{
+		margin: 10px;
+		float: unset;
+		width: fit-content;
+		text-align: center;
+
+	}
+	.legalTexto{
+		font-size:5rem;
+	}
+	.contableTexto{
+		font-size: 5rem;
+	}
+	.contactoTexto{
+		font-size: 5rem;
+	}
+	.nosotrosTexto{
+		font-size: 5rem;
+	}
+	.asideIzquierda{
+		flex-direction: column;
+		justify-content: center;
+		justify-items: center;
+	}
+	iframe{
+	width: 300px;
+		height: 300px;
+	
+	}
+}
+
+
+
+@media (min-width:769px) and (max-width: 900px){
+
+   iframe{
+	width: 300px;
+		height: 300px;
+	
+	}
+    
+    .flexNosotros{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.flexMain{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textoSecundario{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#columna1{
+		margin: 10px;
+		float: unset;
+		width: fit-content;
+		text-align: center;
+		border-radius: 10px;
+		
+	}
+	#columna2{
+		margin: 10px;
+		float: unset;
+		width: fit-content;
+		text-align: center;
+
+
+	}
+	
+	
+	.asideIzquierda{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	
+
+
+		.legalTexto{
+		font-size: 6.6rem;
+	}
+	.contableTexto{
+		font-size: 6.6rem;
+	}
+	.contactoTexto{
+		font-size: 6.6rem;
+	}
+	.nosotrosTexto{
+		font-size: 6.6rem;
+	}
+}
+}
