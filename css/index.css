@@ -73,16 +73,13 @@ header ul li a:hover::before{
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	color:rgba(216, 206, 197, 1) ;
-	
+	color:rgba(216, 206, 197, 1) ;	
 }
 
 .Botones a:hover{
 	transform: scale(1.2);
 	color: black;
 }
-
-
 
 .Botones2 {
 	min-width: 700px;
@@ -97,15 +94,13 @@ header ul li a:hover::before{
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	color:rgba(216, 206, 197, 1) ;
-	
+	color:rgba(216, 206, 197, 1) ;	
 }
 
 .Botones2 a:hover{
 	transform: scale(1.2);
 	color: black;
 }
-
 
 h2{
 	font-family:'Smooch Sans', sans-serif;
@@ -147,7 +142,6 @@ section ul li {
 	width: 48%;
 	text-align: center;
 	border-radius: 10px;
-
 }
 
 #columna2 img{
@@ -157,8 +151,6 @@ section ul li {
 #columna2 img:hover{
 	transform: scale(1.2);
 }
-
-
 
 footer ul {
 	float: inherit;
@@ -249,9 +241,6 @@ h1{
 	overflow: hidden;
 	position: relative;
 }
-
-
-
 
 h4{
 	color:  rgba(114, 28, 44, 1);
@@ -346,22 +335,16 @@ h5{
 	text-align: center;
 }
 
-
 article h2{
-
 	font-family:'Smooch Sans', sans-serif;
 	color: rgb(0, 0, 0);
 	font-size: 2rem;
 	text-align: center;
 }
 
-
-
 .asideIzquierda{
 	display: flex;
 	justify-content: space-between;
-
-
 }
 
 .asideIzquierda section{
@@ -385,7 +368,6 @@ article h2{
 	border-radius: 10px;
 }
 
-
 form{
 	width: 300px;
 	margin: 0 auto;
@@ -403,8 +385,6 @@ input, textarea{
 	width: 150px;
 }
 
-
-
 .nosotrosTexto{
 
 	color:  rgba(114, 28, 44, 1);
@@ -413,21 +393,16 @@ input, textarea{
 	position: absolute;
 	top: 30%;
 	left: 25%;
-	
 }
 
-
 .legalTexto {
-	
 	color:  rgba(114, 28, 44, 1);
 	font-family:'Smooch Sans', sans-serif;
 	font-size: 10rem;
 	position: absolute;
 	top: 35%;
 	left: 40%;
-	
 }
-
 
 .contableTexto {
 	
@@ -436,20 +411,16 @@ input, textarea{
 	font-size: 10rem;
 	position: absolute;
 	top: 30%;
-	left: 25%;
-	
+	left: 25%;	
 }
 
-
-.contactoTexto{
-	
+.contactoTexto{	
 	color:  rgba(114, 28, 44, 1);
 	font-family:'Smooch Sans', sans-serif;
 	font-size: 10rem;
 	position: absolute;
 	top: 30%;
 	left: 37.5%;
-	
 }
 
 .flexMain {
@@ -486,7 +457,6 @@ input, textarea{
 	font-family:'Smooch Sans', sans-serif;
 	color: rgb(0, 0, 0);
 	font-size: 5rem;
-
 }
 
 .flexNosotros{
@@ -496,11 +466,9 @@ input, textarea{
 	background color: white;
 	padding: 50px;
 	border: 2px;
-
 }
 
 .flexNosotros section{
-
 	width: 100%;
 	margin: 5px;
 	text-align: center;
