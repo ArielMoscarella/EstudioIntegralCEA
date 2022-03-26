@@ -11,18 +11,20 @@ html {
 	font-size: 62.5%;
 }
 
+footer{
+	background-color: white;
+}
+
+main{
+	background-color: white;
+}
+
 header {
 	background: white;
 	width: 100%;
 	clear: both;
 	content: " ";o
     display: table;
-}
-
-.Logo {
-	width: 100px;
-	float: left;
-	padding: 10px;
 }
 
 header ul {
