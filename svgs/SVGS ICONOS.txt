@@ -1,0 +1,40 @@
+Equipo Interdisciplinario= Users-Medical/GROUPS
+Experiencia= Scroll-Old/ASSIGNMENT
+Excelencia= Trophy-Star/EMOJI EVENTS
+Servicio= Comments-Question-Check/ QUESTION ANSWEAR
+Confiabilidad= Hands-Holding-Child/ HANDSHAKE
+Honestidad= User-Shield/ ADMIN PANEL 
+Aguilidad=Person-Runing/ DIRECTIONS RUN 
+Eficacia= Stars/ AUTO AWESOME
+
+
+
+Auditoria= File-Pen/ NOTE ALL
+Liquidacion de impuestos= Building-Columns/ ACCOUNT BALANCE
+Admin y gestion= Money-Check-Dollar-Pen/ PRICE CHECK
+Contabilidad general= Computer/ COMPUTER
+Contabilidad de Gestion= Person-Digging/ BADGE
+Control y gestion= Briefcase/ BUSINESS CENTER
+Inventarios= Shelves/ BOOKMARK
+Gestion administrativa de ERP= Network-Wired/ LAN
+Balances=Chart-Line-Up/ SHOW CHART
+Atencion=User-Police-Tie/ SUPERVISED USER CHOICE 
+Armado y Modfi= Diagram-Project/ ACOUNT TREE
+Escision=Apartment/ APARTMENT
+
+
+
+Derecho Previsional=Person-Cane/ ELDERLY
+Derecho Civil= Book-Copy/ COLECTIONS BOOKMARK
+Armado de Sa= Building/ BUSINESS
+Derecho Laboral= User-Helmet-Safety/ ENGINEERING
+Derecho Comercial= Ball-Pile/ SPOKE
+Defensa al consumidor= Shield-Check/ GPP GOOD
+ART=Hospital-User/ HEALTH AND SAFETY
+Derecho Impositivo= Books/ LIBRARY BOOKS
+Gestion de Deudas= Sack-Dollar/ PAYMENTS
+Derecho de Familia= Family/ FAMILY RESTROOM
+Derecho Societario= People-Roof/ ROOFING
+Pericia= Magnifying-Glass/ SEARCH
+
+

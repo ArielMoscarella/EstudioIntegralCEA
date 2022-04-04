@@ -11,6 +11,28 @@ html {
 	font-size: 62.5%;
 }
 
+.imagenesPrincipales{
+
+    -webkit-filter: grayscale(1); 
+    filter: gray; 
+    filter: grayscale(1); 
+
+}
+
+
+.svgs{
+	width: 120px;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+}
+
+.iconosContacto{
+	width: 80px;
+	height: 80px;
+}
+
+
 footer{
 	background-color: white;
 }
@@ -436,8 +458,12 @@ input, textarea{
 
 .flexMain div{
 	
+	display: flex;
+	flex-wrap: nowrap;
 	width: 20%;
 	margin: 5px;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	font-family:'Smooch Sans', sans-serif;
 	color: rgb(0, 0, 0);
