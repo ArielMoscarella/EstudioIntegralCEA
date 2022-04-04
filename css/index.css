@@ -12,13 +12,10 @@ html {
 }
 
 .imagenesPrincipales{
-
     -webkit-filter: grayscale(1); 
     filter: gray; 
     filter: grayscale(1); 
-
 }
-
 
 .svgs{
 	width: 120px;
@@ -256,7 +253,6 @@ h1{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
-	
 }
 
 .imagenTextochico {
