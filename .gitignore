@@ -1,2 +1,3 @@
 SOURCE/
 *.ai
+/node_modules
