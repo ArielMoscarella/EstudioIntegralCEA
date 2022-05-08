@@ -409,6 +409,12 @@ header ul li a:hover::before{
 	text-align: center;
 }
 
+.identificacion img{
+    width:50%;
+    height:50%;
+    border:10px solid #666;
+}
+
 .tercerTitulo{
     background-color: white;
     max-width: 100%;
