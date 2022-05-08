@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@600&display=swap');
 
+/* Generales*/
+
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html {
-	font-size: 62.5%;
+.iconosContacto{
+	width: 75px;
+	height: 75px;
+	align-items: center;
+	justify-content: center;
+}
+main{
+    margin-bottom: 1.5rem;
 }
 
-.imagenesPrincipales{
-    -webkit-filter: grayscale(1); 
-    filter: gray; 
-    filter: grayscale(1); 
+img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .svgs{
@@ -24,26 +31,64 @@ html {
 	justify-content: center;
 }
 
-.iconosContacto{
-	width: 80px;
-	height: 80px;
+h1{
+    font-size: 10.8em;
+    color:  rgba(114, 28, 44, 1);
+	font-family:'Smooch Sans', sans-serif;
 }
 
-
-footer{
-	background-color: white;
+h2{
+    font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+	text-align: center;
 }
 
-main{
-	background-color: white;
+h4{
+	color:  rgba(114, 28, 44, 1);
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 3rem;
+    text-align: center;
+}
+
+h5{
+	color:  rgba(114, 28, 44, 1);
+	font-family: 'Smooch Sans', sans-serif;
+	font-size: 3rem;
+    text-align: center;
+}
+
+/* Header*/
+
+body{
+    font-family: 'Smooch Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center;
+    margin: auto;
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    grid-column: 1 /2;
 }
 
 header {
 	background: white;
-	width: 100%;
-	clear: both;
-	content: " ";o
-    display: table;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    grid-column: 2/8;
+    justify-content: space-around;
 }
 
 header ul {
@@ -55,8 +100,7 @@ header ul li{
 	list-style: none;
 	margin-left: 75px;
 	padding: 12px 0;
-	float: left;
-	position: relative;
+	float:left;
 }
 
 header ul li a{
@@ -74,128 +118,49 @@ header ul li a::before{
 	background:rgba(216, 206, 197, 1) ;
 	height: 5px;
 	top: 0;
-	position: absolute;
 	transition: width 0.2s;
 }
+
 header ul li a:hover::before{
 	width: 100%;
 }
 
-.Botones{
-	min-width: 700px;
-	display: flex;
-	justify-content: right;
+.menu{
+    background: white;
+    grid-column: 2/7;
+    width: 100%;
+    clear: both;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    line-height: 50px;
 }
 
-.Botones a{
-	text-decoration: none;
-	font-size: 28px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color:rgba(216, 206, 197, 1) ;	
+.menu ul{
+    float:inherit;
 }
 
-.Botones a:hover{
-	transform: scale(1.2);
-	color: black;
-}
-
-.Botones2 {
-	min-width: 700px;
-	display: flex;
-	justify-content: right;
-}
-
-.Botones2 a{
-	text-decoration: none;
-	font-size: 10px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color:rgba(216, 206, 197, 1) ;	
-}
-
-.Botones2 a:hover{
-	transform: scale(1.2);
-	color: black;
-}
-
-h2{
-	font-family:'Smooch Sans', sans-serif;
-	color: rgb(0, 0, 0);
-	font-size: 5rem;
-	text-align: center;
-}
-
-h3{
-	font-family:'Smooch Sans', sans-serif;
-	color: rgb(0, 0, 0);
-	font-size: 5rem;
-	text-align: center;
-}
-
-section ul li {
-	font-family: 'Smooch Sans', sans-serif;
-}
-
-#columna1{
-	margin: 10px;
-	float: left;
-	width: 48%;
-	text-align: center;
-	border-radius: 10px;
-}
-
-#columna1 img{
-	border-radius: 10px;
-}
-
-#columna1 img:hover{
-	transform: scale(1.2);
-}
-
-#columna2{
-	margin: 10px;
-	float: right;
-	width: 48%;
-	text-align: center;
-	border-radius: 10px;
-}
-
-#columna2 img{
-	border-radius: 10px;
-}
-
-#columna2 img:hover{
-	transform: scale(1.2);
-}
-
-footer ul {
-	float: inherit;
-}
-
-footer ul li{
-	font-family: 'Smooch Sans', sans-serif;
+.menu ul li{
+    font-family: 'Smooch Sans', sans-serif;
 	list-style: none;
 	margin-left: 75px;
 	padding: 12px 0;
 	float: left;
-	position: relative;
+	position:relative;
+    text-decoration: none;
 }
 
-footer ul li a{
-	text-decoration: none;
+.menu ul li a{
+    text-decoration: none;
 	color:rgba(114, 103, 92, 1) ;
 	font-weight: bold;
 	font-size: 20px;
 	justify-content: space-around;
+    cursor: pointer;
 }
 
-footer ul li a::before{
-	display: block;
+.menu ul li a::before{
+    display: block;
 	content: " ";
 	width: 0%;
 	background:rgba(216, 206, 197, 1) ;
@@ -204,84 +169,307 @@ footer ul li a::before{
 	position: absolute;
 	transition: width 0.2s;
 }
-footer ul li a:hover::before{
-	width: 100%;
+
+.menu ul li a:hover::before{
+    width: 100%;
 }
 
-.imagenTexto{
-	width: 100%;
-	height: 25%;
-	overflow: hidden;
-	position: relative;
+.navbar .redes{
+    grid-column: 8/9;
+	display: flex;
+	justify-content: right;
+}
+
+.navbar .redes a{
+    text-decoration: none;
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+	line-height: 12px;
+	text-align: center;
+	color:rgba(216, 206, 197, 1) ;	
+}
+
+.navbar .redes a:hover{
+    transform: scale(1.2);
+	color: black;
+}
+
+/* Section Main */
+
+.imagen{
+    height: 80vh;
+    background-image:url(../image/principal.jpg);
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.imagenQS{
+    height: 80vh;
+    background-image:url(../image/equipo.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.imagenAC{
+    height: 80vh;
+    background-image:url(../image/calculadora.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.imagenAL{
+    height: 80vh;
+    background-image:url(../image/partelegal.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.imagenC{
+    height: 80vh;
+    background-image:url(../image/contacto.jpg);
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.imagen .info-content{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    color: blue;
+    text-align: center;
+}
+
+.imagenQS .info-content{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    color: blue;
+    text-align: center;
+}
+
+.imagenAC .info-content{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    color: blue;
+    text-align: center;
+}
+
+.imagenAL .info-content{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    color: blue;
+    text-align: center;
+}
+
+.imagenC .info-content{
+    grid-column: 2/10;
+    grid-row: 5/6;
+    color: blue;
+    text-align: center;
+}
+
+.imagen p{
+    font-weight: 300;
+    font-size: 2em;
+    font-family: 'Smooch Sans', sans-serif;
+    text-align: center;
+    color:  rgba(114, 28, 44, 1);
+}
+
+.section{
+    background-color: white;
+    max-width: 100%;
+}
+
+.section .textoSecundario{
+    display: grid;
+    height: 100px;
+    align-items: center;
+    grid-template-areas: "vision valores objetivos" ;
+}
+
+.section .textoSecundario .vision{
+    grid-template-areas: vision;
+    display: flex;
+    justify-content: center;
+    padding: 26px;
+    color: black;
+}
+
+.section .textoSecundario .valores{
+    grid-template-areas: valores;
+    display: flex;
+    justify-content: center;
+    padding: 26px;
+    color: black;
+}
+
+.section .textoSecundario .objetivos{
+    grid-template-areas: objetivos;
+    display: flex;
+    justify-content: center;;
+    padding: 26px;
+    color: black;
+}
+
+.section .textoSecundario2{
+    align-items: center;
+    grid-template-areas: "nosotros" ;
+}
+
+.section .textoSecundario2 .nosotros{
+    grid-template-areas: nosotros;
+    display: flex;
+    justify-content: center;;
+    padding: 26px;
+    color: black;
+}
+
+.section .textoSecundario2 .contable{
+    grid-template-areas: nosotros;
+    display: flex;
+    justify-content: center;;
+    padding: 26px;
+    color: black;
+}
+
+.section2{
+    background-color: white;
+    max-width: 100%;
+}
+
+.section2 .textoSecundario2{
+    align-items: center;
+    grid-template-areas: "nosotros" ;
+}
+
+.section2 .textoSecundario2 .nosotros{
+    grid-template-areas: nosotros;
+    display: flex;
+    justify-content: center;;
+    padding: 26px;
+    color: black;
+}
+
+.flexMain {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: white;
+	padding: 100px;
+	border: 2px;
+}
+
+.flexMain div{
 	
-}
-
-.imagenTexto img{
-	width: 100%;
-	height: 50%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100%;
-	
-}
-
-h1{
-
-	color:  rgba(114, 28, 44, 1);
+	display: flex;
+	flex-wrap: nowrap;
+	width: 25%;
+	margin: 0px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	font-family:'Smooch Sans', sans-serif;
-	font-size: 10rem;
-	position: absolute;
-	top: 25%;
-	left: 30%;
-	
+	color: rgb(0, 0, 0);
+	font-size: 1.5rem;
 }
 
-.scroll ul li{
-	font-family: 'Smooch Sans', sans-serif;
-	font-size: 2rem;
+.identificacion section{
+	position: relative ;
 }
 
-.parteSuperior li{
-	justify-content:safe center;
-	position: relative;
-
-
-}
-.imagenTextochico img{
-	width: 100%;
-	height: 50%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100%;
+.identificacion section img{
+	width: 100px;
+	float: left;
+	padding: 100px;
 }
 
-.imagenTextochico {
-	width: 100%;
-	height: 25%;
-	overflow: hidden;
-	position: relative;
+.identificacion section p{
+	justify-content: center;
 }
 
-h4{
-	color:  rgba(114, 28, 44, 1);
-	font-family: 'Smooch Sans', sans-serif;
-	font-size: 8rem;
-	position: absolute;
-	top: 35%;
-	left: 25%;
-	right: 25%;
+.identificacion p{
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 3rem;
+	text-align: center;
 }
 
-h5{
-	color:  rgba(114, 28, 44, 1);
-	font-family: 'Smooch Sans', sans-serif;
-	font-size: 8rem;
-	position: absolute;
-	top: 35%;
-	left: 25%;
-	right: 25%;
-	
-}	
+.tercerTitulo{
+    background-color: white;
+    max-width: 100%;
+}
+
+.tercerTitulo h3{
+    height: 80px;
+    text-align: center;
+    font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 5rem;
+	text-align: center;
+}
+
+.subEnlaces{
+    max-width: 100%;
+    gap: 10px;
+    text-align: center;
+}
+
+.subEnlaces .columna1 {
+    grid-column: 1/6;
+    grid-row: 1/6;
+    background-size: 50%;
+    border-radius: 10px ;
+}
+
+.subEnlaces .columna1 .h4{
+    text-align: center;
+}
+
+.subEnlaces .columna1 img{
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.subEnlaces .columna1 img:hover{
+    transform: scale(0.8);
+}
+
+.subEnlaces .columna2{
+    grid-column: 6/11;
+    grid-row: 1/6;
+    background-size: 50%;
+    border-radius: 10px;
+}
+
+.subEnlaces .columna2 .h5{
+    text-align: center;
+}
+
+.subEnlaces .columna2 img{
+    border-radius: 10px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.subEnlaces .columna2 img:hover{
+    transform: scale(0.8);
+}
 
 .field{
 	border: solid 1px #ccc;
@@ -332,7 +520,6 @@ h5{
 .btn-rojo:active{
 	background-color: darkred;
 }
-
 
 .identificacion section{
 	position: relative ;
@@ -405,84 +592,6 @@ input, textarea{
 	width: 150px;
 }
 
-.nosotrosTexto{
-
-	color:  rgba(114, 28, 44, 1);
-	font-family:'Smooch Sans', sans-serif;
-	font-size: 10rem;
-	position: absolute;
-	top: 30%;
-	left: 25%;
-}
-
-.legalTexto {
-	color:  rgba(114, 28, 44, 1);
-	font-family:'Smooch Sans', sans-serif;
-	font-size: 10rem;
-	position: absolute;
-	top: 35%;
-	left: 40%;
-}
-
-.contableTexto {
-	
-	color:  rgba(114, 28, 44, 1);
-	font-family:'Smooch Sans', sans-serif;
-	font-size: 10rem;
-	position: absolute;
-	top: 30%;
-	left: 25%;	
-}
-
-.contactoTexto{	
-	color:  rgba(114, 28, 44, 1);
-	font-family:'Smooch Sans', sans-serif;
-	font-size: 10rem;
-	position: absolute;
-	top: 30%;
-	left: 37.5%;
-}
-
-.flexMain {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background color: white;
-	padding: 50px;
-	border: 2px;
-}
-
-.flexMain div{
-	
-	display: flex;
-	flex-wrap: nowrap;
-	width: 20%;
-	margin: 5px;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-family:'Smooch Sans', sans-serif;
-	color: rgb(0, 0, 0);
-	font-size: 2rem;
-}
-
-.textoSecundario {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	background color: white;
-}
-
-.textoSecundario h2{
-	width: 50%;
-	margin: 5px;
-	text-align: center;
-	line-height: 100px;
-	font-family:'Smooch Sans', sans-serif;
-	color: rgb(0, 0, 0);
-	font-size: 5rem;
-}
-
 .flexNosotros{
 	display: flex;
 	flex-wrap: wrap;
@@ -490,138 +599,2703 @@ input, textarea{
 	background color: white;
 	padding: 50px;
 	border: 2px;
+    
 }
 
-.flexNosotros section{
+.flexNosotros .identificacion{
 	width: 100%;
 	margin: 5px;
 	text-align: center;
 	line-height: 100px;
 	font-family:'Smooch Sans', sans-serif;
 	color: rgb(0, 0, 0);
-	font-size: 2rem;
+	font-size: 35px;
 }
 
-
-
-@media (min-width:576px) and (max-width:768px) {
-	    
-.flexNosotros{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.flexMain{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.textoSecundario{
-		flex-direction: column;
-		align-items: center;
-	}
-	#columna1{
-		margin: 10px;
-		float: unset;
-		width: fit-content;
-		text-align: center;
-		border-radius: 10px;
-		
-	}
-	#columna2{
-		margin: 10px;
-		float: unset;
-		width: fit-content;
-		text-align: center;
-
-	}
-	.legalTexto{
-		font-size:5rem;
-	}
-	.contableTexto{
-		font-size: 5rem;
-	}
-	.contactoTexto{
-		font-size: 5rem;
-	}
-	.nosotrosTexto{
-		font-size: 5rem;
-	}
-	.asideIzquierda{
-		flex-direction: column;
-		justify-content: center;
-		justify-items: center;
-	}
-	iframe{
-	width: 300px;
-		height: 300px;
-	
-	}
+.flexNosotros .identificacion p{
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	line-height: 100px;
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 35px;
 }
 
+.flexNosotros .identificacion img{
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	line-height: 100px;
+	font-family:'Smooch Sans', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 35px;
+}
+
+/* Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 
 
-@media (min-width:769px) and (max-width: 900px){
+@media (max-width:1023px){
 
-   iframe{
-	width: 300px;
+    .svgs{
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 8em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 3rem;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 3rem;
+    }
+
+    iframe{
+        width: 255px;
 		height: 300px;
-	
-	}
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 3em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 2/6;
+        grid-row: 1/5;
+        background-size: 50%;
+        border-radius: 10px ;
+        text-align: center;
+        
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 2/6;
+        grid-row: 6/11;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 255px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1.5em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
     
     .flexNosotros{
-		flex-direction: column;
-		align-items: center;
-	}
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
 
-	.flexMain{
-		flex-direction: column;
-		align-items: center;
-	}
+/*Footer*/
 
-	.textoSecundario{
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#columna1{
-		margin: 10px;
-		float: unset;
-		width: fit-content;
-		text-align: center;
-		border-radius: 10px;
-		
-	}
-	#columna2{
-		margin: 10px;
-		float: unset;
-		width: fit-content;
-		text-align: center;
-
-
-	}
-	
-	
-	.asideIzquierda{
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	
-
-
-		.legalTexto{
-		font-size: 6.6rem;
-	}
-	.contableTexto{
-		font-size: 6.6rem;
-	}
-	.contactoTexto{
-		font-size: 6.6rem;
-	}
-	.nosotrosTexto{
-		font-size: 6.6rem;
-	}
+footer{
+    bottom: 0;
+    width: 100%;
 }
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
 }
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+
+}
+
+@media (max-width:991px){
+
+
+    .svgs{
+        width: 55px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 7.2em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 3.34rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 2rem;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 2rem;
+    }
+
+    iframe{
+        width: 400px;
+		height: 547.5px;
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 1.34em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        width: 25%;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.6rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 3.34rem;
+        text-align: center;
+    }
+    
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 1/6;
+        grid-row: 1/6;
+        background-size: 50%;
+        border-radius: 10px ;
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 334px;
+        max-height: 334px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 6/11;
+        grid-row: 1/6;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 334px;
+        max-height: 334px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 3.34rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.34rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 300px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1.1em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
+    
+    .flexNosotros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 23.34px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 23.34px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 23.34px;
+    }
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+  .site-footer [class^=col-]{
+    margin-bottom:30px
+  }
+
+}
+
+@media (max-width:767px){
+
+    .svgs{
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 5.4em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    iframe{
+        width: 300px;
+		height: 542.5px;
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        width: 25%;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 1/6;
+        grid-row: 1/6;
+        background-size: 50%;
+        border-radius: 10px ;
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 6/11;
+        grid-row: 1/6;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 300px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
+    
+    .flexNosotros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 17.5px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 17.5px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 17.5px;
+    }
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+@media (max-width:600px){
+
+    .svgs{
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 3em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    iframe{
+        width: 255px;
+		height: 300px;
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 2/6;
+        grid-row: 1/5;
+        background-size: 50%;
+        border-radius: 10px ;
+        text-align: center;
+        
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 2/6;
+        grid-row: 6/11;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 255px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
+    
+    .flexNosotros{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+
+}
+
+@media (max-width:480px){
+
+    .svgs{
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1{
+        font-size: 3em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+    }
+
+    iframe{
+        width: 255px;
+		height: 300px;
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 3/6;
+        grid-row: 1/5;
+        background-size: 50%;
+        border-radius: 10px ;
+        text-align: center;
+        
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 3/6;
+        grid-row: 6/11;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 255px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
+    
+    .flexNosotros{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+
+}
+
+@media (max-width:320px){
+
+    .svgs{
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mainHome{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    h1{
+        font-size: 3em;
+        color:  rgba(114, 28, 44, 1);
+        font-family:'Smooch Sans', sans-serif;
+    }
+    
+    
+    h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h4{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    h5{
+        color:  rgba(114, 28, 44, 1);
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    iframe{
+        width: 255px;
+		height: 300px;
+    }
+    
+    /* Header*/
+    
+    body{
+        font-family: 'Smooch Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Section Main */
+    
+    .imagen{
+        height: 80vh;
+        background-image: linear-gradient(rgba 16, 16,16, .8 , rgba 16,16,16, .9), url(../img/);
+        background-size: cover;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    
+    .imagen .info-content{
+        grid-column: 2/10;
+        grid-row: 5/6;
+        color: blue;
+        text-align: center;
+    }
+    
+    
+    .imagen p{
+        font-weight: 300;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+        text-align: center;
+        color:  rgba(114, 28, 44, 1);
+    }
+    
+    .flexMain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+        border: 2px;
+    }
+    
+    .flexMain div{
+        
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 100px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .tercerTitulo{
+        background-color: white;
+        max-width: 100%;
+    }
+    
+    .tercerTitulo h3{
+        height: 80px;
+        text-align: center;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .subEnlacesHome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subEnlacesHome img{
+        width: 100%;
+    }
+
+    .subEnlaces{
+        max-width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 {
+        grid-column: 2/6;
+        grid-row: 1/5;
+        background-size: 50%;
+        border-radius: 10px ;
+        text-align: center;
+        
+    }
+    
+    .subEnlaces .columna1 .h4{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna1 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna1 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .subEnlaces .columna2{
+        grid-column: 2/6;
+        grid-row: 6/11;
+        background-size: 50%;
+        border-radius: 10px;
+    }
+    
+    .subEnlaces .columna2 .h5{
+        text-align: center;
+    }
+    
+    .subEnlaces .columna2 img{
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .subEnlaces .columna2 img:hover{
+        transform: scale(0.8);
+    }
+    
+    .field{
+        border: solid 1px #ccc;
+        padding: 10px;
+        width: 200px;
+    }
+    
+    .field:focus{
+        border-color: white;
+    }
+    
+    .center-content{
+        text-align: center;
+    }
+    
+    .btn{
+        font-family: 'Smooch Sans', sans-serif;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255, 0.3);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .btn-verde{
+        color: white;
+        background-color: #3CC93F;
+    }
+    
+    .btn-verde:hover{
+        background-color: #37B839;
+    }
+    
+    .btn-verde:active{
+        background-color: #29962A;
+    }
+    
+    .btn-rojo{
+        color: white;
+        background-color: red;
+    }
+    
+    .btn-rojo:hover{
+        background-color: indianred;
+    }
+    
+    .btn-rojo:active{
+        background-color: darkred;
+    }
+    
+    .identificacion section{
+        position: relative ;
+    }
+    
+    .identificacion section img{
+        width: 100px;
+        float: left;
+        padding: 10px;
+    }
+    
+    .identificacion section p{
+        justify-content: center;
+    }
+    
+    .identificacion p{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    article h2{
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .asideIzquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .asideIzquierda section{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .asideIzquierda section p{
+        text-align: center;
+    }
+    
+    .asideIzquierda div{
+        margin: 10px;
+        width: 48%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    
+    form{
+        width: 255px;
+        margin: 0 auto;
+        background-color: rgba(216, 206, 197, 1);
+        padding: 20px;
+        color: rgba(114, 28, 44, 1);
+        border-radius: 3px;
+        font-size: 1em;
+        font-family: 'Smooch Sans', sans-serif;
+    }
+    
+    input, textarea{
+        outline: none;
+        border: 0;
+        width: 150px;
+    }
+    
+    .flexNosotros{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        background color: white;
+        padding: 50px;
+        border: 2px;
+        
+    }
+    
+    .flexNosotros .identificacion{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion p{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
+    .flexNosotros .identificacion img{
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        line-height: 100px;
+        font-family:'Smooch Sans', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    width: 100%;
+}
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center
+  }
+
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+.social-icons li.title{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons.size-sm a{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover{
+  background-color:#007bb6
+}
+
+.social-icons a.dribbble:hover{
+  background-color:#ea4c89
+}
+
+.social-icons li.title{
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+
+}
+
+
+
+
+
+
+/*// map*/
+
+$borde:(
+	"brd1" : 2px 
+)
